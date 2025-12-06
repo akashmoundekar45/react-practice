@@ -143,4 +143,4 @@
 
 export const url= "https://www.gstatic.com/marketing-cms/assets/images/1a/9f/7bba006e49de847508df3a4a7b93/andriod-full-body.webp=s96-fcrop64=1,00000000ffffffff-rw"
 
-export const navItems=['Home','About','Contact','Blogs', 'Courses']
+export const navItem = ['Home','About','Contact','Blogs', 'Courses']

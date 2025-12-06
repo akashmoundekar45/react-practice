@@ -1,5 +1,5 @@
 import React from 'react'
-import { navItems, url } from '../data'
+import { navItem, url } from '../data'
 
 
 // const Navbar = () => {
@@ -48,13 +48,13 @@ import { navItems, url } from '../data'
 //react are solve state managment problem 
 
 const Navbar = (props) => {
-   console.log(navItems)
+   console.log(navItem)
    return (
       <div className="navbar">
          <img src={url} alt="error" className='logo' />
          <div className="menu-items">
             {
-               navItems.map((item) => {
+               navItem.map((item) => {
                   return <p>{item}</p>
                })
             }
@@ -68,7 +68,7 @@ const Navbar = (props) => {
       </div>
    )
 }
-export default Navbar
+export default Navbar // only one file can export but export word are write on the front then export multiple file 
 
 // todo difference between block element and inline element
 //? A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.

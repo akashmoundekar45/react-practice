@@ -84,7 +84,7 @@
 
 .btn{
   padding:10px 20px;
-  border-radius:8px ;
+  border-radius:8px;
   background-color: #18f43d;
   font-weight: 700;
 }
@@ -95,4 +95,20 @@
 
 .btn:active{
   background-color: #4370f5;
+}
+.joke{
+  height:300px;
+  width:300px;
+  border:4px solid #a03a86;
+  
+  background-color: rgba(135, 56, 225, 0.836);
+ 
+/* examples */
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);           /* simple shadow */
+box-shadow: 5px 5px 15px rgba(0,0,0,0.3);        /* offset shadow */
+box-shadow: 0 0 20px rgba(0,0,0,0.5);            /* glow effect */
+box-shadow: inset 0 0 10px rgba(0,0,0,0.2);      /* inner shadow */
+box-shadow: 0 4px 6px rgba(0,0,0,0.1), 
+            0 10px 20px rgba(0,0,0,0.2);         /* multiple shadows */          /* simple shadow */
+
 }

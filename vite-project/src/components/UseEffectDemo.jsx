@@ -1,21 +1,38 @@
-import React,{useEffect,useState} from "react";
+import React, { useEffect, useState } from 'react'
 
-const UserEffectDemo = () =>{
-    const[X, setX]= useState(0)
-    const[Y, setY]= useState(0)
+//useEffect(<function>, <dependency>)
+// useEffect(()=>{
+//function
+// } ,[])
+
+
+const UseEffectDemo = () => {
+
+    const [X,setX]= useState(0)
+    const [Y,setY]= useState(0)
+    const [A,setA]= useState(2)
+
+    // function hello() {
+    //     console.log("this is UseEffect")
+    // }
+    // useEffect(hello)
     useEffect(()=>{
-        console.log("hello");
-    },[X])
-    return(
+              console.log("this is UseEffect") 
+    },[X,Y])//its a dependancy array. thats  only run in one time use empty dependancy
+            //when dependancy array can run for specific task
+    return (
         <div>
-            <h1>data page</h1>
-            <h1>X:{X}</h1>
-            <h1>Y:{Y}</h1>
-            
-            <button className="btn" onClick={()=> setX(X+1)}> inc X</button>
-             <button className="btn" onClick={()=> setY(Y-1)}> inc Y</button>
-             {/* <button className=" btn" onClick={()=>setX(X-1)}> dec X</button> */}
+            <h1>
+                useEffect
+            </h1>
+            <h3>X value:{X}</h3>
+             <h3>Y value:{Y}</h3>
+             <h3>A value:{A}</h3>
+            <button className='btn' onClick={()=>setX(X+1)}>Inc X</button>
+            <button className='btn'onClick={()=>setY(Y+1)}>Inc Y</button>
+              <button className='btn'onClick={()=>setA(A*2)}>Inc A</button>
         </div>
     )
 }
-export default UserEffectDemo
+
+export default UseEffectDemo
