@@ -13,25 +13,15 @@ import { navItem, url } from './data.js'
 import DataFetching from './components/DataFetching.jsx'
 import myContext from './components/context/UserContext.js'
 import { BrowserRouter, Form, Route, Routes,Link } from 'react-router-dom'
+import Practise from './components/practise/practise.jsx'
 
 
 
 
 
 
-// function App() {
-//     let url ="https://th.bing.com/th/id/OIP.1xX4yvvHcM7IhjbfG1tRrQHaEK?w=290&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-//     let name =" akash"
 
-//   return (
-//     <>
-//        <h1>{name}</h1>     
-//        <Navbar title={name} age="20" url={url}/>
-//     </>
-//   )
-// }
 
-// export default App
 
 
 //!       23/11/25 (12:28 am) *********************************************************************************************************************
@@ -49,6 +39,7 @@ import { BrowserRouter, Form, Route, Routes,Link } from 'react-router-dom'
 
 
 function App() {
+   let name= "akash"
    // let isLogin = true
    // console.log(useState())  
    // console.log(useState("akash"))     //usestate hook array milta hai 0 index undefine hai or 1st pr function
@@ -57,7 +48,6 @@ function App() {
    // const [isLogin, setisLogin] = useState(true) // write a set in 2nd , first is a function
    const { isLogin, setisLogin } = useContext(myContext)
    let dashboardUserName = "akash"
-
    // function handleClick() {
    //    // setisLogin(isLogin+1)npm run dev
    //    //  setisLogin(!isLogin)
@@ -66,6 +56,7 @@ function App() {
    // problem :  normal react me variable update or change nhi kr skte that's why create a hook 
    //all hook are solve a problem
    return (
+      
       <BrowserRouter>
          <>
             {/* write as because access for all element */}
@@ -105,6 +96,14 @@ function App() {
                      isLogin?<Profile data={dashboardUserName} /> : <Login />
                }
        */}
+            <Routes>
+               <Route path='/' element={isLogin ? <Profile data={dashboardUserName} /> : <Login />} />
+               <Route path='/profile' element={<Profile data={dashboardUserName} />} />
+               <Route path='/login' element={<Login />} />
+            </Routes>
+            <Practise name="akash" gender='male' age='20'/>
+            <h1>{name}</h1>
+          
 
             {/* <Conditionalrendering/> */}
             {/* <Other/> */}
