@@ -1,3 +1,5 @@
+//! 30 nov
+
 import React, { useEffect, useState } from 'react'
 
 //useEffect(<function>, <dependency>)
@@ -11,7 +13,6 @@ const UseEffectDemo = () => {
     const [X,setX]= useState(0)
     const [Y,setY]= useState(0)
     const [A,setA]= useState(2)
-
     // function hello() {
     //     console.log("this is UseEffect")
     // }

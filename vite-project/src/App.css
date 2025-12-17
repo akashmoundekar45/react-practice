@@ -112,3 +112,59 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.1),
             0 10px 20px rgba(0,0,0,0.2);         /* multiple shadows */          /* simple shadow */
 
 }
+.profile{
+  height: 300px;
+  width:500px;
+border: 2px soliid black;
+background-color: rgba(43, 147, 173, 0.74)
+}
+
+.dashboard{
+  height: 190px;
+  width:200px;
+border: 2px soliid black;
+background-color:antiquewhite
+}
+
+.form{
+  height: 325px;
+  width: 400px;
+  display:flex;
+  flex-direction: column;
+  color:black;
+ border:2px solid black;
+ margin-left: 35%;
+ margin-top: 50px;
+ border-radius: 15px;
+ background-color: aliceblue;
+}
+
+.form input{
+  height: 35px;
+  width:90%;
+  background-color:#a9c8e2 ;
+  border-radius: 10px;
+  border:transparent;
+  color:black;
+ margin-top: 25px;
+ margin-left: 14px;
+ font-weight: bold;
+ font-size: 18px;
+}
+
+input:placeholder-shown{
+ background-color: #fff8dc; /* light beige */
+border: 2px solid orange;
+font-style: italic;
+}
+
+.form button{
+  height:35px;
+  width: 95%;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: rgb(28, 14, 217);
+  border-radius:15px;
+  color:white;
+  font-weight: bold;
+}
